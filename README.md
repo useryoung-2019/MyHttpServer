@@ -1,4 +1,5 @@
 #**Background**
+
 This is my initial contact with c++, refer to the relevant content on github to write a small rookie level http project
 
 #**Install**
@@ -38,5 +39,5 @@ like this `~$ ./server -L5000 -C100 -unull -p11111 -dweb -H6`
 6. 构造一个http请求分析状态机，使请求解析管线化
 
 #**Reference**
-1.游双.Linux高性能服务器编程[M].机械工业出版社:,2013-05
 
+1.游双.Linux高性能服务器编程[M].机械工业出版社:,2013-05
