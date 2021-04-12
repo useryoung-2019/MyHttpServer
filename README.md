@@ -1,7 +1,7 @@
-#**Background**   
+# **Background**   
 This is my initial contact with c++, refer to the relevant content on github to write a small rookie level http project
 
-#**Install** 
+# **Install** 
 - OS:Ubuntu 18.04
 - Comlier: gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
 - Thread model: posix
