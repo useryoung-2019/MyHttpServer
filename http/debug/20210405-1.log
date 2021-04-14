@@ -1,0 +1,8 @@
+[INFO] [20210405 19:45:43] test.cpp:main-> Log Start
+[INFO] [20210405 19:45:43] ../../connectpool/connectpool.cpp:initPool-> create 5 connection
+[INFO] [20210405 19:45:43] test.cpp:main-> ConnecPool start
+[INFO] [20210405 19:45:43] ../../threadpool/threadpool.hpp:startPool-> create 4 threads
+[INFO] [20210405 19:45:43] test.cpp:main-> ThreadPool start
+[INFO] [20210405 19:45:43] test.cpp:main-> Listenfd: 8
+[INFO] [20210405 19:45:43] test.cpp:main-> Epollfd 9
+[INFO] [20210405 19:45:43] test.cpp:main-> BEGIN!

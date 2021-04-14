@@ -1,0 +1,39 @@
+							index.html
+								|   
+								|<————————Reregister.html
+						   		|				|fail
+						   		|    no			|
+						   		|——————————>register.html
+								|				|success
+							yes	|<——————————————+
+								|
+								|
+								|<——————————————+
+								|	  wrong		|
+							load.html——————>Reload.html
+								|
+								|
+								|
+								|success
+								|
+								|
+								|			
+						   homepage.html						
+								|
+								|
+						+———————+———————+
+						|				|	
+						|				|
+				  picture.html	   audio.html	
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
