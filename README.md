@@ -33,8 +33,8 @@ This project has its own default parameters, you can also custmoize parameters b
 like this `~$ ./server -L5000 -C100 -unull -p11111 -dweb -H6`
 
 ## **Technical Points**
-1.  使用Epoll的IO多路复用，结合非阻塞IO，构造使用** 半同步/半反应堆的并发模式 **处理大量的http连接请求
-2. 简单实现一个能够** [同步/异步]输出 **的日志模块，输出记录相关的http连接处理以及server运行状态
+1.  使用Epoll的IO多路复用，结合非阻塞IO，构造使用**半同步/半反应堆的并发模式**处理大量的http连接请求
+2. 简单实现一个能够**同步/异步输出**的日志模块，输出记录相关的http连接处理以及server运行状态
 3. 使用c++11的thread库实现一个线程池以避免线程创建与销毁的造成的额外开销
 4. 利用mysql_c_api 实现一个连接池，主要适用于http的账户注册以及登录服务，实现功能较为简单
 5. 实现一个利用升序的时间轮的定时器，结合Linux的信号处理，定时对过期连接清除
