@@ -39,7 +39,7 @@ void epollDelfd(int epollfd, int fd);
             modeET 是否同时加入ET触发模式
 * 返回值：  void
 */
-void epollModfd(int epollfd, int fd, int ev, bool modeET);
+void epollModfd(int epollfd, int fd, int ev, bool triggerET);
 
 /*
 * 函数功能： 信号处理函数

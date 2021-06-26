@@ -1,6 +1,6 @@
-server.out: main.cpp http/http.hpp http/http.cpp http/func.hpp http/func.cpp connectpool/connectpool.hpp connectpool/connectpool.cpp threadpool/threadpool.hpp log/log_sys.hpp log/log_sys.cpp log/block_queue.hpp timer/timer_node.hpp timer/timer.hpp timer/timer.cpp
-	g++ main.cpp http/http.hpp http/http.cpp http/func.hpp http/func.cpp connectpool/connectpool.hpp connectpool/connectpool.cpp threadpool/threadpool.hpp log/log_sys.hpp log/log_sys.cpp log/block_queue.hpp timer/timer_node.hpp timer/timer.hpp timer/timer.cpp -o server.out -pthread -lmysqlclient -g
+server: main.cpp server.cpp http/Http.cpp http/func.cpp log/Log.cpp log/LogQueue.hpp ThreadPool/ThreadPool.hpp timer/Timer.cpp timer/TimerNode.cpp SQL/ConnectPool.hpp SQL/AbstractFactory.hpp SQL/FactoryMysql.hpp SQL/FactoryRedis.hpp SQL/AbstractProductSQL.hpp SQL/ProductMysql.cpp SQL/ProductRedis.cpp SQL/MysqlConnectPool.cpp SQL/RedisConnectPool.cpp
+	g++ main.cpp server.cpp http/Http.cpp http/func.cpp log/Log.cpp log/LogQueue.hpp ThreadPool/ThreadPool.hpp timer/Timer.cpp timer/TimerNode.cpp SQL/ConnectPool.hpp SQL/AbstractFactory.hpp SQL/FactoryMysql.hpp SQL/FactoryRedis.hpp SQL/AbstractProductSQL.hpp SQL/ProductMysql.cpp SQL/ProductRedis.cpp SQL/MysqlConnectPool.cpp SQL/RedisConnectPool.cpp -g -o server -std=c++11 -lhiredis -lmysqlclient -pthread
 
 .PHONY:clean
 clean:
-	-rm server.out
+	-rm server
